@@ -2,6 +2,17 @@ WIP draft, Michael Sumner
 
 
 
+ 
+
+- how does scheduling (or leapfrogging) the task work, expect we will batch each data source (and group within)
+- how to set `module load singularity/4.1.0-slurm` in just one place?
+- what is user exp like with Setonix? We have multiple expert users in our project for intensive use of Pawsey, they can schedule interactive or batch jobs
+- can we connect to a session with VSCode?
+- can we streamline the user-connect experience (currently start a batch job, reverse proxy)
+- file-listing and public-acessibility of links on Acacia 
+- rsync the component that overlaps with nilas to nci (this is outside the Setonix tent, but enabled by Acacia as the most up to date )
+- rsync the bulk to rdsi, it simplifies our Nectar footprint immensely (it's just an rsync + webserver)
+
 
 
 
