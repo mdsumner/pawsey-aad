@@ -13,6 +13,9 @@ These scripts:
 - convert select datasets from NetCDF to GeoTIFF COG in object storage see [sync-ghrsst.sh](https://github.com/mdsumner/pawsey-aad/blob/main/acacia/sync-ghrsst.sh) and [sync-oisst.sh](https://github.com/mdsumner/pawsey-aad/blob/main/acacia/sync-oisst.sh)
 - virtualize select datasets by writing [VirtualiZarr](https://virtualizarr.readthedocs.io/en/stable/index.html) Parquet stores, which can be opened as a single endpoint by [xarray](https://xarray.dev) see [nsidc-virtualize-south.sh](https://github.com/mdsumner/pawsey-aad/blob/main/acacia/nsidc-virtualize-south.sh) and other '-virutalize.sh' scripts
 - list the contents of the buckets in full [bucket_listing.sh](https://github.com/mdsumner/pawsey-aad/blob/main/acacia/bucket_listing.sh) and in *curated form* (organized by dataset-identifier, sorted by date and ready for downstream use) [curated_listing.sh](https://github.com/mdsumner/pawsey-aad/blob/main/acacia/curated_listing.sh)
+- each script invokes a Python or R script, run in the context of a specialized docker image with all dependencies installed
+
+This is very much an ongoing exploration, we are learning a lot and uncovering a lot of questions and ways of proceeding. 
 
 ## datasets
 
