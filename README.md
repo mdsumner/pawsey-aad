@@ -1,8 +1,10 @@
 # pawsey-aad
 
-The Pawsey preparatory access scheme project "Climate output processing for the Integrated Digital East Antarctica program". 
+This repo hosts the scripts used by and description of the Pawsey preparatory access scheme project "Climate output processing for the Integrated Digital East Antarctica program". 
 
-This project demonstrated migrating a data science toolkit from its home on Nectar research cloud to Pawsey, using object storage. 
+This project demonstrated migrating a data science toolkit from its home on Nectar research cloud to Pawsey, using object storage. It's not finalized but we achieved the goal of determining requirements and proving each step. The data sets remain up to date on a daily basis, wiht some problems still causing delays. The main datasets are reported on by this document, for their temporal coverage: 
+
+https://mdsumner.github.io/sooty.watch/articles/sooty-watch.html
 
 Pawsey is a Tier 1 HPC in Australia, funded by the CSIRO, physically housed in Western Australia. The login node is Setonix, it provides lustre scratch, and all permanent storage is on Acacia the object storage. 
 
