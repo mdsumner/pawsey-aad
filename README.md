@@ -28,6 +28,8 @@ This is very much an ongoing exploration, we are learning a lot and uncovering a
 
 The command `singularity exec $MYSOFTWARE/sif_lib/gdal-builds_rocker-gdal-dev-python.sif ...` is an HPC way to launch a script within a docker image, there's a daily task to pull the docker image into $MYSOFTWARE from it's github repo. `singularity` is a module loaded for the HPC. 
 
+Using a whole-node is a bit over the top `--cpus-per-task=128`, and not appending to a virtual-zarr is a bit wasteful but I don't yet know how to do that
+
 
 ## datasets
 
