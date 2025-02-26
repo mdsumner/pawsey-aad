@@ -4,7 +4,12 @@ The Pawsey preparatory access scheme project "Climate output processing for the 
 
 This project demonstrated migrating a data science toolkit from its home on Nectar research cloud to Pawsey, using object storage. 
 
+Pawsey is a Tier 1 HPC in Australia, funded by the CSIRO, physically housed in Western Australia. The login node is Setonix, it provides lustre scratch, and all permanent storage is on Acacia the object storage. 
+
+We have configured a number of buckets for public access, to host sets of netcdf remote sensing data we use regularly, to reformat some, and to provide R tools for public access, and Python public access via VirtualiZarr-parquet. 
+
 ## jobs on Pawsey 
+
 There are regular tasks run (see [crontab.md](https://github.com/mdsumner/pawsey-aad/blob/main/crontab.md)), that work on bash scripts in the acacia/ and singul/ directories. 
 
 These scripts: 
