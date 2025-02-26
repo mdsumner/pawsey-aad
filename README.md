@@ -2,7 +2,7 @@
 
 This repo hosts the scripts used by and description of the Pawsey preparatory access scheme project "Climate output processing for the Integrated Digital East Antarctica program". 
 
-This project demonstrated migrating a data science toolkit from its home on Nectar research cloud to Pawsey, using object storage. It's not finalized but we achieved the goal of determining requirements and proving each step. The data sets remain up to date on a daily basis, wiht some problems still causing delays. The main datasets are reported on by this document, for their temporal coverage: 
+This project demonstrated migrating a data science toolkit from its home on Nectar research cloud to Pawsey, using object storage. It's not finalized but we achieved the goal of determining requirements and proving each step. The data sets remain up to date on a daily basis, with some problems still causing delays. The main datasets are reported on by this document, for their temporal coverage: 
 
 https://mdsumner.github.io/sooty.watch/articles/sooty-watch.html
 
@@ -23,6 +23,11 @@ These scripts:
 - each script invokes a Python or R script, run in the context of a specialized docker image with all dependencies installed
 
 This is very much an ongoing exploration, we are learning a lot and uncovering a lot of questions and ways of proceeding. 
+
+### Some technicalities in the scripts
+
+The command `singularity exec $MYSOFTWARE/sif_lib/gdal-builds_rocker-gdal-dev-python.sif ...` is an HPC way to launch a script within a docker image, there's a daily task to pull the docker image into $MYSOFTWARE from it's github repo. `singularity` is a module loaded for the HPC. 
+
 
 ## datasets
 
