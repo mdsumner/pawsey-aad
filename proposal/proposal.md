@@ -1,5 +1,28 @@
 ## Draft proposal for Australian research institutions and ARCO practices
 
+### Preamble
+
+Historically, scientific data in earth-observation disciplines have been stored
+in files, stored on a file system that the end-user was directly connected to
+(i.e. their own machine, or local network). Direct access to files stored on a
+remote server was possible (using e.g. openDap) but difficult and not widely
+used. The advent of object storage and other cloud technologies has made remote
+file access (for general files) commonplace: however, remote access to
+earth-observation and similar scientific data files brings additional
+challenges, including the ability to efficiently extract and work with subsets
+of files (e.g. a spatial subset of a global file, or a subset of depths from a
+three-dimensional ocean model, or a subset of variables from a multivariate
+file).
+
+One of the most promising solutions to this is Zarr, a format for
+multidimensional data arrays that is particularly designed for cloud storage and
+for efficient remote querying. However, Zarr is relatively recent and suffers
+from poor R support, no version control, and issues with transactional
+reliability. New technologies VirtualiZarr and Icechunk promise to greatly
+improve this going forward. 
+
+### Proposal
+
 We propose a project to promote usage of new workflows that cross compute
 facility boundaries, based on Zarr and related technologies. The project will
 involve working with Australian institutions and a commercial company. The
