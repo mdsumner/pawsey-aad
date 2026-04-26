@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --account=pawsey0973
+#SBATCH --account=$MYP
 #SBATCH --time=01:00:00
 #SBATCH --export=NONE
 #SBATCH --ntasks=1
@@ -10,7 +10,6 @@
 
 module load singularity/4.1.0-slurm
 
+singularity pull --force --dir $MYSOFTWARE/sif_lib docker:ghcr.io/hypertidy/gdal-r-full:latest
 
-singularity pull --force --dir $MYSOFTWARE/sif_lib docker:ghcr.io/mdsumner/gdal-builds:rocker-gdal-dev-python
-
-singularity pull --force --dir $MYSOFTWARE/sif_lib docker:ghcr.io/mdsumner/gdal-builds:rocker-gdal-dev
+singularity pull --force --dir $MYSOFTWARE/sif_lib docker:ghcr.io/hypertidy/gdal-python:dev
